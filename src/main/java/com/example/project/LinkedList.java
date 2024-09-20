@@ -60,12 +60,11 @@ public class LinkedList<T> implements List<T>{
     	T MostFreq = null;
     	
     	Node<T> OuterLoop = head;
-    	Node<T> InnerLoop = null;
     	
     	while(OuterLoop != null) {
     		int CurCount = 1;
+    		Node<T> InnerLoop = OuterLoop.next;
     		while(InnerLoop != null) {
-    			InnerLoop = OuterLoop.next;
     			if(InnerLoop.data.equals(OuterLoop.data))
     				CurCount++;
     			InnerLoop = InnerLoop.next;
