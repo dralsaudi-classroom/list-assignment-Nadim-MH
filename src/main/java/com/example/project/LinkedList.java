@@ -56,6 +56,7 @@ public class LinkedList<T> implements List<T>{
     }
     public T mostFrequentElement() {
     	
+    	
     	int MaxCount = 0;
     	T MostFreq = null;
     	
@@ -64,9 +65,11 @@ public class LinkedList<T> implements List<T>{
     	while(OuterLoop != null) {
     		int CurCount = 1;
     		Node<T> InnerLoop = OuterLoop.next;
+    		
     		while(InnerLoop != null) {
     			if(InnerLoop.data.equals(OuterLoop.data))
     				CurCount++;
+    			
     			InnerLoop = InnerLoop.next;
     		}
     		if(CurCount > MaxCount) {
