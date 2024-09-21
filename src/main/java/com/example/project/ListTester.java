@@ -10,6 +10,7 @@ public class ListTester {
 				while (!list.last())
 					list.findNext();
 			list.insert(tmp);
+			
 
 		}
 		// Write the method circularLeftShift, user of List ADT, that takes as input a
