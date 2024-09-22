@@ -67,7 +67,7 @@ public class LinkedList<T> implements List<T>{
     		Node<T> InnerLoop = OuterLoop.next;
     		
     		while(InnerLoop != null) {
-    			if(InnerLoop.data.equals(OuterLoop.data))
+    			if(InnerLoop.data == OuterLoop.data)
     				CurCount++;
     			
     			InnerLoop = InnerLoop.next;
