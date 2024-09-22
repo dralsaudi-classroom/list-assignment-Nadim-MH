@@ -26,6 +26,7 @@ public class ListTester {
 	
 		if (l1.empty())
 			return;
+		l1.findFirst();
 		while (!l1.last())
 			l1.findNext();
 
